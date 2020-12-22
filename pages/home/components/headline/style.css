@@ -1,0 +1,40 @@
+ .button-div{
+  position: absolute;
+  height: fit-content;
+  bottom: 84px;right:  0;left: 282px;
+  margin: auto;
+}
+
+#headline-banner{
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  background-image: url(/assets/home/headline/headline-lg.webp);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+@media only screen and (max-width: 1024px){
+  #headline-banner{
+    width: 100%;
+    height: 360px;
+    background-image: url(/assets/home/headline/headline-md.webp); 
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .button-div{ bottom:50px;right:  0;left: 272px; }
+}
+
+@media only screen and (max-width: 756px){
+  #headline-banner{
+    background-image: url(/assets/home/headline/headline-sm.webp); 
+    height: 45vw;
+    max-height: 260px;
+  }
+  .button-div{
+    display: none;
+  }
+}
+ 

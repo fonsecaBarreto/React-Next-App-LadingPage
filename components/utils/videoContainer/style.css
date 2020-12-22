@@ -1,0 +1,43 @@
+
+.video-container{
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#ytplayer{
+  position: relative;
+  width: 820px;
+  height: 440px;
+  z-index: 1;
+}
+
+
+
+.video-container::before{
+  content: "";position: absolute; top: 0;right: 164px;z-index: -1;
+  width: 100%;height: 100%;
+  background-image: url("/assets/home/grid.svg");
+  background-size: cover;background-repeat: no-repeat;background-position: right;
+}   
+
+@media only screen and (max-width:1440px){
+  .video-container::before{right: 12px!important;}
+}
+
+@media only screen and (max-width:960px){
+  #ytplayer{
+    width: calc(100vw - 32px);
+    height: calc( 56vw - 32px);
+  }
+  .video-container::before{right: 0;left:0;background-position: center;} 
+  
+}
+
+

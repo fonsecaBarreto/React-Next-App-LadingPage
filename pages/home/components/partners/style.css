@@ -1,0 +1,65 @@
+#partners{
+  background-color: #221e3d;
+  color: #fff;
+  position: relative;
+}
+
+#partners .section-title{
+  color: yellow;
+}
+
+#partners .section-subtitle{
+  color: #fff;
+
+}
+
+
+
+/*  */
+.partners-pool{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+.partner-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: fit-content;
+}
+
+
+.partner-item img {
+  width: 210px;
+  height: fit-content;
+  margin-bottom: 10px;
+}
+.partner-item .part-name {
+  margin-top: 8px;
+  font-size: 1.5em;
+  height: fit-content;
+}
+.partner-item .part-description {
+  width: 200px;
+  height: fit-content;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+@media only screen and (max-width: 960px){
+  /*  */
+  .partners-pool{
+    justify-content: center;
+  }
+  .partner-item{
+    margin-top: 28px;
+  }
+
+
+}

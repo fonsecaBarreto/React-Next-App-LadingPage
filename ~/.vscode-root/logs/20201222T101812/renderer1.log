@@ -1,0 +1,2 @@
+[2020-12-22 10:18:32.904] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/fonsecabarreto/dev/pagina_de_vendas/.vscode'
+[2020-12-22 10:19:38.612] [renderer1] [warning] Settings pattern "workbench.fontAliasing" doesn't match any settings

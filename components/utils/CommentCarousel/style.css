@@ -1,0 +1,198 @@
+
+  .comments-flow{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .comments-viewport{
+    width: calc(100% - 120px);
+    height: calc(100% - 0px);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .comments-row{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all .34s;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    height: 100%;
+    width: fit-content;
+  }
+
+  
+  .carousel-float-button{
+    cursor: pointer;
+    width:52px; height: 52px;  border-radius: 50%;
+    position: absolute;  top: 0;  bottom: 0;  margin: auto;
+    border: none;
+    background-color: #d51247;
+    display: flex;
+    justify-content: center; align-items: center;    
+    font-size: 1.3em; font-weight: bold;
+    color: white; box-shadow: 0px 2px 4px #0005;
+    padding-right: 4px;
+  }
+  .carousel-float-button:focus{
+    outline: none;
+  }
+  .carousel-float-button:active{
+    transform: scale(.98);
+  }
+
+  .carousel-float-button.left-button{ 
+    padding-right: 4px;
+   
+    left:8px }
+  .carousel-float-button.right-button{ 
+    padding-left: 4px;
+    right:8px }
+
+
+
+  /*  item */
+
+  .comments-item {
+    position: relative;
+    transition: all .35s;
+    padding: 12px 24px 24px 32px;
+    height: 100%;
+  }
+
+  .comments-item-inner{
+    position: relative;
+    padding: 22px 32px 10px 20px;
+    box-shadow: 2px 2px 3px #0003;
+    border-radius: 6px;
+    height: 100%;
+    background-color: rgb(252, 252, 252);
+    z-index: 1;
+  }
+
+  .comments-item-inner::before{
+    content: "";
+    position: absolute;top: 8px ;right: 14px;
+    width: calc( 100% - 6px );height: calc( 100% );
+    border:solid 3.6pt #d51247;
+    border-radius: 9px;
+    z-index: -1;
+  } 
+
+
+  /* bototm */
+  .comments-item::after{
+    content: "";
+    position: absolute;bottom: 32px ;right: 24px;
+    background-color: rgb(252, 252, 252);
+    width: 32px;height: 32px;
+    background-image: url("/assets/aspas-duplas.svg");
+    z-index: 1
+  }
+  /* top */
+  .comments-item-inner:after{
+    content: "";
+    position: absolute;top: 32px ;left: -33px;
+    background-color: #221e3d;
+    width: 32px;height: 32px;
+    background-image: url("/assets/aspas-duplas.svg");
+    transform: rotateZ(180deg);
+  } 
+  .comments-item-inner.wa::after{
+    background-color: rgb(252, 252, 252);
+  } 
+ 
+  .text-content{
+    height: 100%;
+    max-height: 160px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: left;
+    margin-top: 10px;
+    padding: 0 12px 0 0 ;
+    white-space: normal;
+  }
+  .text-content::-webkit-scrollbar {
+    width: 9px;               /* width of the entire scrollbar */
+  }
+  .text-content::-webkit-scrollbar-track {
+    background: rgb(220, 220, 220);        /* color of the tracking area */
+  }
+  .text-content::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(220,220,220);  /* creates padding around scroll thumb */
+  }
+
+  .comments-item .text{
+    font-family: "Lato", sans-serif;
+    font-size: 1.25em;
+
+    color: #221e3d!important;
+    text-align: left;
+  }
+
+  .comments-item .name{
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 600;
+    text-align: left;
+    height: 1em;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #221e3d!important;
+  }
+
+  .comments-item img{
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  @media only screen and (max-width: 756px){
+    .text-content{
+      height: 100%;
+      max-height: 160px;
+    }
+
+    .comments-item {
+      padding: 10px 22px 18px 28px;
+    }
+
+    .comments-item-inner{
+      position: relative;
+      border-radius: 2px;
+      padding: 22px 32px 10px 20px;
+     
+      border-radius: 6px;
+      height: 100%;
+      background-color: rgb(252, 252, 252);
+      z-index: 1;
+    }
+ 
+    .comments-viewport{
+      overflow-x: auto;
+      overflow-y: hidden;
+      position: relative;
+      width: calc(100% - 32px );
+      height: calc(100%);
+      scrollbar-width: none;
+   
+    }
+ 
+    .comments-viewport ::-webkit-scrollbar {
+        width: 0px;  
+        background: transparent;  
+    }
+
+    .left-button{ display: none; }
+    .right-button{ display: none; }
+
+  }

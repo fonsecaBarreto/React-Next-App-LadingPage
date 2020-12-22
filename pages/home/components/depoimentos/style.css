@@ -1,0 +1,24 @@
+#depoimentos {
+  background-color: #221e3d;
+}
+#depoimentos .section-title{
+  color: yellow;
+}
+
+#depoimentos .section-title-small{
+  color: #fff;
+}
+#howitdepoimentosworks .section-subtitle{
+  color: #fff;
+
+}
+
+.carousel-contaier{
+  margin: 64px 0 0;
+}
+
+@media only screen and (max-width: 960px){
+  .carousel-contaier{
+    margin: 32px 0 0;
+  }
+}

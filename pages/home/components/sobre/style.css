@@ -1,0 +1,106 @@
+#sobre{
+  background-color: #d51247;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  box-shadow: inset -2px 0px 18px #0005;
+}
+
+#sobre .section-title{
+  color: #fff;
+}
+
+#sobre .section-title-small{
+  color: #fff;
+}
+#sobre .section-subtitle{
+  color: #fff;
+}
+
+#sobre::after{
+  content: "";
+  width: 364px;
+  height: 110%;
+  position: absolute;
+  top: 0;right: 20vw;
+  left: auto;
+  background-image: url("/assets/home/sobre/escadavec.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  z-index: -1;
+} 
+
+.sobre-table{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  row-gap: 16px;
+}
+
+
+ul.topics{
+  text-decoration: none;
+} 
+.topics li{
+  margin: 8px 28px;
+  /* text-decoration: none; */
+}
+
+.fpercent{
+  position: relative;
+  height: 130px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  margin-right: 12px;
+}
+.fpercent img{
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1600px){
+  #sobre::after{
+    right: 120px;
+    opacity: .9;
+  } 
+}
+@media only screen and (max-width: 1400px){
+  #sobre::after{
+    right: 48px;
+    opacity: .5;
+  } 
+}
+
+@media only screen and (max-width: 960px){
+  .fpercent{
+    height: 110px;
+    width: fit-content;
+  }
+
+  .sobre-table{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 10px;
+  }
+  #sobre::after{
+    display: none;
+  } 
+  
+}
+@media only screen and (max-width: 756px){
+
+  .topics{
+    font-size: 1.5em;
+    max-width: unset;
+    margin-top: 8px;
+  }
+
+  .fpercent{
+    height: 138px;
+    width: fit-content;
+  }
+
+  
+}

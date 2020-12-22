@@ -1,0 +1,61 @@
+ /*  */
+ #proposta{
+  position: relative;
+  background-color: #221e3d;
+} 
+
+
+#proposta .call-button {
+  color: black;
+}
+#proposta .section-title{
+  color: #fff;
+}
+
+#proposta .section-subtitle{
+  color: #fff;
+
+}
+
+
+
+ 
+
+.pp-box{
+  text-decoration: none;
+  color: #222;
+  position: relative;
+  border-radius: 12px;
+  border: solid 4px #221e3d;
+  max-width: 480px;padding: 48px 32px;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  transition: all .38s;
+}
+.pp-box:hover{
+  color: #111;
+  text-decoration: none;
+  transform: scale(1.02);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+  box-shadow: 0px 3px 6px #0004;
+}
+
+.pp-box .img{
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+}
+.pp-box ul {padding:  36px 0 0 24px;}
+.pp-box ul li{font-size: 1.1em;}
+@media only screen and ( max-width: 960px){
+
+
+  #proposta{
+    padding-bottom: 0;
+  } 
+}

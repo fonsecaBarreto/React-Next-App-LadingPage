@@ -8,7 +8,8 @@ module.exports = withCSS({
     return {
       '/': { page: '/home' },
       '/faleinglesagora': { page: '/home' },
-      '/newsletter': { page: '/newsletter' }
+      '/newsletter': { page: '/newsletter' },
+      '/obrigado': { page: '/obrigado' }
     }
   },
 })

@@ -1,0 +1,23 @@
+#obrigado-screen{
+  padding: 100px 0 32px;
+}
+
+.ob-button{
+  padding: 10px 40px;
+  border: none;
+  font-size: 1.3em;
+  background-color: #fff;
+  border: solid 1px #ddd;
+  cursor: pointer;
+}
+.ob-button:focus{
+  outline: none;
+}
+.ob-button:hover{
+  border: solid 1px #111
+
+}
+.ob-button:active{
+  color: #999;
+  transform: scale(.99);
+}
